@@ -1,0 +1,54 @@
+/* Reset default styles */
+:root{ 
+    font-family: Arial;
+    font-size: 20px;
+}
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/* Breadcrumbs STYLES */
+.breadcrumbs {
+    font-size:0;
+}
+.breadcrumbs li {
+    font-size:1rem;
+    display: inline-block;
+    background-image:
+     linear-gradient(#fff8,white),
+     url(chevron-right.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1rem;
+    /* border: 1px solid red;
+        hw1: Why here em/rem no changers?
+        --deoarece unitatea em poate duce la un efect de amestecare și anume 
+        că valoarea celorlalte proprietăți setate în unitatea de măsură em(în 
+        cazul de față background-size și padding-right)se măsoară
+        în dependență de valoarea em a font-size-ului elementului copil.
+        ps:nu știu cât e de corect.
+    */
+
+    padding-right:1.2rem;
+}
+.breadcrumbs li:last-child {
+    background-image: none;
+    padding-right: 0;
+}
+.breadcrumbs a {
+    color:#a6a6a6;
+}
+.breadcrumbs a:hover {
+    font-size: 1.1rem;
+    color:#808080;
+}
+.breadcrumbs li:last-child a {
+    color:#3333ff;
+}
+.breadcrumbs li:last-child a:hover {
+    color:#808080;
+}
